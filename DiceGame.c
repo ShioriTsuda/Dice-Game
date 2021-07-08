@@ -2,9 +2,18 @@
 #include<stdlib.h>
 #include<time.h>
 
+#define N 100
+
 int main(void){
 
     int s1,s2,total;
+    char name[N];
+
+    printf("What is your name?\n");
+
+    scanf("%s", name);
+
+    printf("Hello, %s!\n",name);
 
     srand(time(NULL));
 
@@ -17,6 +26,6 @@ int main(void){
     total = s1 + s2;
 
     printf("Total value: %d", total);
-
+    
     return 0;
-} 
+}
