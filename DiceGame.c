@@ -16,7 +16,13 @@ int main(void){
 
     total = s1 + s2;
 
-    printf("Total value: %d", total);
+    printf("Total value: %d\n", total);
+
+    if(total > 7){
+        printf("You won");
+    }else{
+        printf("You lost");
+    }
 
     return 0;
 } 
